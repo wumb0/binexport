@@ -36,6 +36,8 @@ jobs:
     - name: Enable Developer Command Prompt (Windows)
       if: matrix.os == 'windows-2022'
       uses: ilammy/msvc-dev-cmd@v1.12.1
+      with:
+        sdk: '10.0.22621.0'
 
     - name: Enable mold linker (Linux)
       if: matrix.os == 'ubuntu-22.04'
